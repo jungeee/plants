@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flowerpot_select</title>
+    <link rel="stylesheet" href="./css/flowerpot_select.css" type="text/css">
+    <link rel="stylesheet" href="./css/slick.css" type="text/css">
+    <link rel="stylesheet" href="./css/slick-theme.css" type="text/css">
+    <script src="./script/jquery-3.7.1.min.js"></script>
+    <script src="./script/slick.min.js"></script>
+</head>
+
+<body>
+    <menu>
+        <a href="./plnats_data.html">
+            <img src="./img/back_icon.png" alt="back">
+        </a>
+        <h1>화분선택</h1>
+    </menu>
+    <main>
+        <section class="img">
+            <h2 hidden>화분선택</h2>
+            <figure><img src="./img/bestplants.png" alt="best_plants"></figure>
+        </section>
+
+        <div class="slide">
+            <div class="cont"><a href="#"><img src="./img/flowerpot (1).png" alt="plants"></a></div>
+            <div class="cont"><a href="#"><img src="./img/flowerpot (2).png" alt="plants"></a></div>
+            <div class="cont"><a href="#"><img src="./img/flowerpot (3).png" alt="plants"></a></div>
+            <div class="cont"><a href="#"><img src="./img/flowerpot (1).png" alt="plants"></a></div>
+            <div class="cont"><a href="#"><img src="./img/flowerpot (2).png" alt="plants"></a></div>
+            <div class="cont"><a href="#"><img src="./img/flowerpot (3).png" alt="plants"></a></div>
+        </div>
+        <footer>
+            <a href="./place.html">공간에 놓아보기</a>
+        </footer>
+    </main>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slide').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                autoplay: true,
+                autoplaySpeed: 2500,
+                slidesToShow: 3,
+                adaptiveHeight: true,
+                responsive: [
+                    {
+                        breakpoint: 391, // 화면의 넓이가 600px 이상일 때
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    }
+                ]
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>

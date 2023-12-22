@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d</title>
+    <link rel="stylesheet" href="./css/3dbg.css" type="text/css">
+    <script src="./script/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    
+    <menu>
+        <a href="./place.html">
+            <img src="./img/back_icon.png" alt="back">
+        </a>
+        <h1>3D 식물 배치</h1>
+    </menu>
+    <footer>
+        <a href="./pay.html">화분선택하기</a>
+    </footer>
+
+    <div class="cursor"></div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+    const cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.pageX + 'px';
+    cursor.style.top = e.pageY + 'px';
+})
+
+});
+    
+</script>
+
+</body>
+</html>

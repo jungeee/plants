@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>best1</title>
+    <link rel="stylesheet" href="./css/best.css" type="text/css">
+    <link rel="stylesheet" href="./css/slick.css" type="text/css">
+    <link rel="stylesheet" href="./css/slick-theme.css" type="text/css">
+    <script src="./script/jquery-3.7.1.min.js"></script>
+    <script src="./script/slick.min.js"></script>
+</head>
+<body>
+    <menu>
+        <a href="./home.html">
+            <img src="./img/Close.png" alt="close">
+        </a>
+        <h1>공간에 가장 잘 어울리는 식물</h1> 
+    </menu>
+    
+    <section>
+        <div class="data">
+        <h2 hidden>공간에 가장 잘 어울리는 식물</h2>
+        <a href="./plnats_data.html"  class="best">
+            <figure><img src="./img/bestplants.png" alt="bestplants"></figure>
+        </a>
+        <h2>같이 식재하면 좋은 식물</h2>
+    </div>
+        <div class="slide">
+            <div class="cont" ><a href="#"><img src="./img/main_plants1.png" alt="plants"></a></div>
+            <div class="cont"><a  href="#"><img src="./img/main_plants2.png" alt="plants"></a></div>
+            <div class="cont"><a  href="#"><img src="./img/main_plants3.png" alt="plants"></a></div>
+            <div class="cont"><a  href="#"><img src="./img/main_plants4.png" alt="plants"></a></div>
+            <div class="cont"><a  href="#"><img src="./img/main_plants1.png" alt="plants"></a></div>
+            <div class="cont"><a  href="#"><img src="./img/main_plants2.png" alt="plants"></a></div>
+        </div>
+    </section>
+
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('.slide').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            autoplay: true,
+        autoplaySpeed: 2500,
+            slidesToShow: 2,
+            adaptiveHeight: true
+          });
+        });
+    </script>
+</body>
+</html>

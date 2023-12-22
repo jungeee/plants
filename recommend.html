@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recommend</title>
+    <link rel="stylesheet" href="./css/slick.css" type="text/css">
+    <link rel="stylesheet" href="./css/slick-theme.css" type="text/css">
+       <link rel="stylesheet" href="./css/recommend.css" type=text/css>
+    <script src="./script/jquery-3.7.1.min.js"></script>
+    <script src="./script/slick.min.js"></script>
+</head>
+
+<body>
+    <menu>
+        <a href="./subway2.html"><img src="./img/back_icon.png" alt="back"></a>
+        <h1>당신의 추천 식물</h1>
+        <a href="./home.html">
+            <img src="./img/Close.png" alt="close">
+        </a>
+    </menu>
+    <section>
+        <!-- <figure>
+            <img src="./img/recommend.png" alt="recommend">
+        </figure> -->
+    
+        <div class="st">
+            <h2>식물정보</h2>
+            <p>길쭉한 잎이 매력적인 아레카야자는 NASA에서 인정한 공기 정화 식물로
+                가습과 공기정화의 탁월한 효능을 지닌 식물입니다.
+                1.8M의 아레카야자는 하루 동안 1L의 수분을 내뿜기 때문에 건조한 공간에
+                놓으면 인테리어와 건조함을 동시에 잡을 수 있습니다.</p>
+            <div class="btn">
+                <button type="button" >구매하기</button>
+                <button type="button">장바구니</button>
+            </div>
+            <h2>추천식물</h2>
+            <div class="slide">
+                <div><a href="./home.html"><img src="./img/plants1.png" alt="plants1"></div></a>
+                <div><a href="./home.html"><img src="./img/plants2.png" alt="plants2"></div></a>
+                <div><a href="./home.html"><img src="./img/plants3.png" alt="plants3"></div></a>
+                <div><a href="./home.html"><img src="./img/plants1.png" alt="plants1"></div></a>
+                <div><a href="./home.html"><img src="./img/plants2.png" alt="plants2"></div></a>
+                <div><a href="./home.html"><img src="./img/plants3.png" alt="plants3"></div></a>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slide').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                autoplay: true,
+                autoplaySpeed: 2500,
+                slidesToShow: 3,
+                adaptiveHeight: true,
+                responsive: [
+                    {
+                        breakpoint: 391, // 화면의 넓이가 600px 이상일 때
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    }
+                ]
+            });
+        });
+
+    </script>
+</body>
+
+</html>
